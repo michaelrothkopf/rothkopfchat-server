@@ -1,0 +1,16 @@
+.users-controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-list {
+  flex: 2;
+}
+
+.user-controls__user-modifiers {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}

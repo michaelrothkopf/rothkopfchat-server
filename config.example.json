@@ -1,0 +1,6 @@
+{
+  "adminPassword": "PASSWORD",
+  "dbUrl": "mongodb://localhost/rothkopfchat",
+  "serverUrl": "rothkopfchat.ddns.net:8149",
+  "mode": "DEVELOPMENT"
+}

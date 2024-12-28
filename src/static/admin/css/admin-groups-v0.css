@@ -1,0 +1,12 @@
+.groups-controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.group-list {
+  flex: 1;
+}
+
+.groups-controls__group-modifiers {
+  flex: 2;
+}

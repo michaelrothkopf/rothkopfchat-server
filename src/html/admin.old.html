@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rothkopf Chat Administration</title>
+    <link rel="stylesheet" href="css/admin.css">
+  </head>
+  <body>
+    <div class="controlPanel">
+      <h1>Password</h1>
+      <p>Any time you wish to complete an action, you must put the admin password into this box. It will be cleared after each action.</p>
+      <input type="password" name="passwordBox" id="passwordBox" autocomplete="off">
+    </div>
+    <div class="controlPanel">
+      <h1>Add User</h1>
+      <form class="actionForm" id="addUserForm">
+        <label for="addUserFullName">Full name of user:</label>
+        <input type="text" name="addUserFullName" id="addUserFullName" autocomplete="off">
+        <label for="addUserGroup">Group name of user:</label>
+        <input type="text" name="addUserGroup" id="addUserGroup">
+        <input type="submit" id="addUserSubmit"></input>
+      </form>
+    </div>
+    <div class="controlPanel">
+      <h1>Lock Account</h1>
+      <form class="actionForm" id="lockUserForm">
+        <label for="lockUserFullName">Full name of user:</label>
+        <input type="text" name="lockUserFullName" id="lockUserFullName" autocomplete="off">
+        <label for="lockUserUID">UID of user:</label>
+        <input type="text" name="lockUserUID" id="lockUserUID" autocomplete="off">
+        <input type="submit" id="lockUserSubmit"></input>
+      </form>
+    </div>
+    <div class="controlPanel">
+      <h1>Unlock Account</h1>
+      <form class="actionForm" id="unlockUserForm">
+        <label for="unlockUserFullName">Full name of user:</label>
+        <input type="text" name="unlockUserFullName" id="unlockUserFullName" autocomplete="off">
+        <label for="unlockUserUID">UID of user:</label>
+        <input type="text" name="unlockUserUID" id="unlockUserUID" autocomplete="off">
+        <input type="submit" id="unlockUserSubmit"></input>
+      </form>
+    </div>
+    <script type="module" src="js/admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RothkopfChat Administration</title>
+    <link rel="stylesheet" href="css/admin-v0.css">
+    <link rel="stylesheet" href="css/admin-home-v0.css">
+  </head>
+  <body>
+    <div class="admin-panel">
+      <div class="admin-panel__upper">
+        <div class="header">
+          <h3 class="header__title">RothkopfChat Administration</h3>
+          <div class="header__spacing"></div>
+          <button class="header__log-out" id="logOut">Log Out</button>
+        </div>
+      </div>
+      <div class="admin-panel__lower">
+        <div class="navigation">
+          <a href="#" class="navigation__tab navigation__tab--active">Home</a>
+          <a href="/admin/users" class="navigation__tab">Users</a>
+          <a href="/admin/chats" class="navigation__tab">Chats</a>
+          <a href="/admin/groups" class="navigation__tab">Groups</a>
+        </div>
+        <div class="controls">
+          <h3>RothkopfChat Home</h3>
+          <p>Specific actions are available in the submenus to the left.</p>
+
+          <h5 id="userCount"></h5>
+          <h5 id="groupCount"></h5>
+          <h5 id="chatCount"></h5>
+        </div>
+      </div>
+    </div>
+    <script src="js/adminDashboard.js" type="module"></script>
+    <script src="js/adminHome.js" type="module"></script>
+  </body>
+</html>

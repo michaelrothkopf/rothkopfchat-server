@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RothkopfChat Administration</title>
+    <link rel="stylesheet" href="css/admin-v0.css">
+    <link rel="stylesheet" href="css/admin-listcontrols-v0.css">
+  </head>
+  <body>
+    <div class="admin-panel">
+      <div class="admin-panel__upper">
+        <div class="header">
+          <h3 class="header__title">RothkopfChat Administration</h3>
+          <div class="header__spacing"></div>
+          <button class="header__log-out" id="logOut">Log Out</button>
+        </div>
+      </div>
+      <div class="admin-panel__lower">
+        <div class="navigation">
+          <a href="/admin/home" class="navigation__tab">Home</a>
+          <a href="#" class="navigation__tab navigation__tab--active">Users</a>
+          <a href="/admin/chats" class="navigation__tab">Chats</a>
+          <a href="/admin/groups" class="navigation__tab">Groups</a>
+        </div>
+        <div class="controls">
+          <h3>RothkopfChat Users Control</h3>
+          <div class="list-controls">
+            <ol class="list-controls__list" id="userList"></ol>
+            <div class="list-controls__controls">
+              <form class="control-form add-user-form" id="addUserForm">
+                <h3>Add User</h3>
+                <label for="addUserFullName">Full name of user:</label>
+                <input type="text" name="addUserFullName" id="addUserFullName" autocomplete="off">
+                <label for="addUserGroup">Group name of user:</label>
+                <input type="text" name="addUserGroup" id="addUserGroup">
+                <input type="submit" id="addUserSubmit"></input>
+              </form>
+              <form class="control-form lock-user-form" id="lockUserForm">
+                <h3>Lock User</h3>
+                <label for="lockUserFullName">Full name of user:</label>
+                <input type="text" name="lockUserFullName" id="lockUserFullName" autocomplete="off">
+                <label for="lockUserUID">UID of user:</label>
+                <input type="text" name="lockUserUID" id="lockUserUID" autocomplete="off">
+                <input type="submit" id="lockUserSubmit"></input>
+              </form>
+              <form class="control-form unlock-user-form" id="unlockUserForm">
+                <h3>Unlock User</h3>
+                <label for="unlockUserFullName">Full name of user:</label>
+                <input type="text" name="unlockUserFullName" id="unlockUserFullName" autocomplete="off">
+                <label for="unlockUserUID">UID of user:</label>
+                <input type="text" name="unlockUserUID" id="unlockUserUID" autocomplete="off">
+                <input type="submit" id="unlockUserSubmit"></input>
+              </form>
+              <form class="control-form set-user-group-form" id="setUserGroupForm">
+                <h3>Set User Group</h3>
+                <label for="setUserGroupUID">UID of user:</label>
+                <input type="text" name="setUserGroupUID" id="setUserGroupUID" autocomplete="off">
+                <label for="setUserGroupGroup">New group name:</label>
+                <input type="text" name="setUserGroupGroup" id="setUserGroupGroup" autocomplete="off">
+                <input type="submit" id="setUserGroupSubmit"></input>
+              </form>
+              <form class="control-form set-user-group-form" id="bulkAddUsersForm">
+                <h3>Bulk Add Users</h3>
+                <label for="bulkAddUsersInput">Paste data here (DO NOT USE THIS UNLESS YOU KNOW WHAT YOU&apos;RE DOING):</label>
+                <textarea type="text" name="bulkAddUsersInput" id="bulkAddUsersInput" autocomplete="off" rows="1" cols="40"></textarea>
+                <input type="submit" id="bulkAddUsersSubmit"></textarea>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/adminDashboard.js" type="module"></script>
+    <script src="js/adminUsers.js" type="module"></script>
+  </body>
+</html>
